@@ -33,4 +33,4 @@ Sendo Assim o Netflix possui a maioria dos temas em conteudo narrativo,com desta
 ## 📌 Possíveis Melhorias
 - Separar filmes e séries (`type`)  
 - Analisar evolução ao longo dos anos  
-- Criar dashboard interativo  
+ 
