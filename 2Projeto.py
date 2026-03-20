@@ -14,12 +14,16 @@ anos=st.multiselect("Escolha o Ano de Lancamento:",
 )
 #Aplicar Filtro 
 Grafico=Grafico[Grafico["release_year"].isin(anos)]
-#Separar Generos
-df_generos=Grafico["genres"].str.split(", ")
-df_generos=df_generos.explode()
-#Contar os Top 10
-top_generos=df_generos.value_counts().head(10)
-#Criar Grafico
-fig= px.bar(x=top_generos.index,y=top_generos.values,text=top_generos.values,title="Top 10 Generos da Netflix")
-#Mostrar grafico
-st.plotly_chart(fig)
+if Grafico.empty:
+    st.warning("Nenhum dado encontrado para os filtros selecionados.")
+else:
+    
+    #Separar Generos
+    df_generos=Grafico["genres"].str.split(", ")
+    df_generos=df_generos.explode()
+    #Contar os Top 10
+    top_generos=df_generos.value_counts().head(10)
+    #Criar Grafico
+    fig= px.bar(x=top_generos.index,y=top_generos.values,text=top_generos.values,title="Top 10 Generos da Netflix")
+    #Mostrar grafico
+    st.plotly_chart(fig)
