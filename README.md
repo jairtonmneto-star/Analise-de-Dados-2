@@ -1,36 +1,103 @@
-Autor:José Airton
-# Analise-de-Dados-2
-Passos
-1)Projeto Objetivo:Descobrir Quais Generos Possui Mais Programas De Tv's da Netflix 
-2)Tecnologias Usadas:Python,Pandas,Plotly Express,Vscode
-3)Banco de Dados Utilizado:Baixar o Banco de Dados https://www.kaggle.com/datasets/imtkaggleteam/netflix  
+# 📊 Análise de Dados - Netflix
+
+**Autor:** José Airton
+
+---
+
+## 🎯 Objetivo
+
+Analisar os dados da Netflix para identificar quais gêneros possuem maior quantidade de títulos no catálogo, com foco em programas de TV e filmes.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* Python
+* Pandas
+* Plotly Express
+* VS Code
+* Streamlit (dashboard interativo)
+
+---
+
+## 📁 Base de Dados
+
+Dataset utilizado:
+https://www.kaggle.com/datasets/imtkaggleteam/netflix
+
+---
 
 ## ▶️ Como Executar
-1. Baixe o dataset no link acima  
-2. Abra o projeto no VS Code  
-3. Execute o arquivo `.ipynb` ou `.py`  
-4. Visualize o gráfico gerado com os gêneros mais frequentes
-##Analise Realiza
-1.Separacao dos Generos(coluna:genres)
-2.Transformar os Dados com Explode
-3.Executar o Arquivo em .ipnyb ou .py
-4.Visualizar o Grafico Gerado Com Generos Mais Frequentes
-4)Resultados:
-Descobri que os Generos que mais possui programa de Tv's são:
-1.Filmes Internacionais(“pode ser desconsiderado dependendo do objetivo da análise”)
-2.Dramas
-3.Comedia
-4.Ação e Aventura
-5.Filmes Independentes
-6.Filmes Romanticos
-7.Trailers
-8.Filmes de Crianca e Familia
-9.Documentarios
-10. Terror.
-5)Conclusao
-Sendo Assim o Netflix possui a maioria dos temas em conteudo narrativo,com destaque para drama e comedia que dominam o catalogo
+
+1. Baixe o dataset no link acima
+2. Clone este repositório ou baixe os arquivos
+3. Abra o projeto no VS Code
+4. Ative o ambiente virtual (opcional)
+5. Instale as dependências:
+
+   ```bash
+   pip install pandas plotly streamlit
+   ```
+6. Execute o dashboard:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 🔍 Etapas da Análise
+
+1. Limpeza dos dados (remoção de valores nulos)
+2. Separação dos gêneros (`genres`)
+3. Transformação dos dados com `explode()`
+4. Contagem dos gêneros mais frequentes
+5. Criação de visualizações interativas
+
+---
+
+## 📊 Resultados
+
+Os gêneros mais frequentes encontrados foram:
+
+1. Filmes Internacionais *(pode variar conforme o filtro)*
+2. Dramas
+3. Comédia
+4. Ação e Aventura
+5. Filmes Independentes
+6. Filmes Românticos
+7. Documentários
+8. Terror
+9. Infantil e Família
+10. Outros
+
+---
+
+## 📈 Insights
+
+* A Netflix possui forte predominância de conteúdos narrativos
+* Gêneros como **Drama** e **Comédia** dominam o catálogo
+* Há grande diversidade de conteúdos internacionais
+
+---
+
+## 🧠 Conclusão
+
+A análise mostra que a Netflix concentra grande parte do seu catálogo em conteúdos populares e amplamente consumidos, com destaque para drama e comédia, indicando foco em engajamento do público.
+
+---
 
 ## 📌 Possíveis Melhorias
-- Separar filmes e séries (`type`)  
-- Analisar evolução ao longo dos anos  
- 
+
+* Separar análise entre filmes e séries (`type`)
+* Analisar evolução ao longo dos anos
+* Criar dashboard interativo com filtros
+* Analisar distribuição por país
+* Avaliar duração média dos títulos
+
+---
+
+## 🚀 Projeto em Desenvolvimento
+
+Este projeto foi evoluído para um dashboard interativo utilizando Streamlit, permitindo análise dinâmica dos dados com filtros por ano e tipo de conteúdo.
+
