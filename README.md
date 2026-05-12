@@ -20,12 +20,7 @@ Analisar os dados da Netflix para identificar quais gêneros possuem maior quant
 
 ---
 
-## 📁 Base de Dados
 
-Dataset utilizado:
-https://www.kaggle.com/datasets/imtkaggleteam/netflix
-
----
 
 ## ▶️ Como Executar
 
